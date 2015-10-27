@@ -523,6 +523,16 @@ explain subsection
 email-bar
 */
 
+@media (max-width: 767px) {
+	#email-bar {
+		background: url(img/call-center.jpg) no-repeat 50% 50% fixed; 
+	 	background-size: cover;
+	 	-moz-background-size: cover;
+	 	-o-background-size: cover;
+	 	-webkit-background-size: cover;
+	}
+}
+
 #email-bar {
 	background: url(img/call-center.jpg) no-repeat 50% 50% fixed; 
  	background-size: cover;
