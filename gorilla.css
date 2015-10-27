@@ -423,26 +423,25 @@ main section
 problem subsection
 */
 
-@media (max-width: 767px) {
-	#problem {
-		min-height: 80%;
-		background: url(img/call-center.jpg) no-repeat 50% 50%; 
-	 	background-size: cover;
-	 	-moz-background-size: cover;
-	 	-o-background-size: cover;
-	 	-webkit-background-size: cover;
-	 }
-}
-
 #problem {
 	min-height: 80%;
-	background: url(img/call-center.jpg) no-repeat 50% 50% fixed; 
+	background: url(img/call-center.jpg) no-repeat 50% 50%; 
  	background-size: cover;
  	-moz-background-size: cover;
  	-o-background-size: cover;
  	-webkit-background-size: cover;
 }
 
+@media (min-width: 768px) {
+	#problem {
+		min-height: 80%;
+		background: url(img/call-center.jpg) no-repeat 50% 50% fixed; 
+	 	background-size: cover;
+	 	-moz-background-size: cover;
+	 	-o-background-size: cover;
+	 	-webkit-background-size: cover;
+	 }
+}
 
 .problem-pane h3 {
 	font-family: inherit;
