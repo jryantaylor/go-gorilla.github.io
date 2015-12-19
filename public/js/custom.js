@@ -1,4 +1,4 @@
-
+// animations
 
 $('#fightsforyou').waypoint(function(direction) {
 	if (direction === 'down') {
@@ -56,3 +56,14 @@ $('#rampage-head').waypoint(function(direction) {
   offset: '38'
 })
 
+// smooth scroll
+
+$(".navbar a[href^='#']").on('click', function(e) {
+ e.preventDefault();
+ var hash = this.hash;
+ $('html, body').animate({
+     scrollTop: $(this.hash).offset().top -49
+   }, 500, function(){
+     window.location.hash = hash;
+   });
+});
